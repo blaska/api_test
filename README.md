@@ -13,7 +13,7 @@ In your terminal:
   $ rails s
 ```
 
-Visit [http://localhost:3000/oauth/applications][http://localhost:3000/oauth/applications]
+Visit [http://localhost:3000/oauth/applications](http://localhost:3000/oauth/applications)
 
 Create an application:
 
