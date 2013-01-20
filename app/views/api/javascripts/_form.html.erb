@@ -1,0 +1,25 @@
+<%= form_for(@api_javascript) do |f| %>
+  <% if @api_javascript.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@api_javascript.errors.count, "error") %> prohibited this api_javascript from being saved:</h2>
+
+      <ul>
+      <% @api_javascript.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
