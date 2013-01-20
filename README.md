@@ -5,14 +5,14 @@
 
 In your terminal:
 
-<code>
+```
   $ git clone ...
   $ cd api_test
   $ rake db:create
   $ rake db:migrate
   $ rake db:seed
   $ rails s
-</code>
+```
 
 Visit [http://localhost:3000/oauth/applications][http://localhost:3000/oauth/applications]
 
@@ -34,7 +34,7 @@ Once created, hang on to the application id & secret key.  Example:
 
 ## Scripting
 
-<code>
+```ruby
 
   #!/usr/bin/env ruby
 
@@ -62,15 +62,15 @@ Once created, hang on to the application id & secret key.  Example:
   puts 'Creating new Javascript'
 
   puts access.post('/api/javascripts.json', {:body => {:api_javascript => {:name => 'file10', :body => 'console.log(foo);'}}}).parsed
-</code>
+```
 
 Expected output:
 
-<code>
+```
   Getting listing of JavaScripts:
   {"body"=>"alert(\"It works!\");", "created_at"=>"2013-01-20T17:08:59Z", "id"=>1, "name"=>"file1", "updated_at"=>"2013-01-20T17:08:59Z"}
   Getting first Javascript:
   {"body"=>"alert(\"It works!\");", "created_at"=>"2013-01-20T17:08:59Z", "id"=>1, "name"=>"file1", "updated_at"=>"2013-01-20T17:08:59Z"}
   Creating new Javascript
   {"body"=>"console.log(foo);", "created_at"=>"2013-01-20T19:09:00Z", "id"=>29, "name"=>"file10", "updated_at"=>"2013-01-20T19:09:00Z"}
-</code>
+```
