@@ -5,7 +5,7 @@
 In your terminal:
 
 ```
-$ git clone ...
+$ git clone git://github.com/blaska/api_test.git
 $ cd api_test
 $ rake db:create
 $ rake db:migrate
