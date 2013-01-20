@@ -1,4 +1,3 @@
-
 # API Test
 
 ## Setup
@@ -23,6 +22,7 @@ Create an application:
 
 Once created, hang on to the application id & secret key.  Example:
 
+```
   Callback url:
   urn:ietf:wg:oauth:2.0:oob
 
@@ -31,6 +31,7 @@ Once created, hang on to the application id & secret key.  Example:
 
   Secret:
   ccd35744ea20310b9ba1b931ad9e4c2596f6c751df441c1657f2e4284f4dad05
+```
 
 ## Scripting
 
